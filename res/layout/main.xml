@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:orientation="vertical"  
+    android:background="#e7e7e7" 
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent" > 
+     <RelativeLayout
+        android:id="@+id/phoneTitleLayout"
+        style="@style/top_base_item" >
+
+        <ImageView
+            android:id="@+id/title_back_layout"
+            style="@style/top_title_item"
+            android:background="@drawable/phone_account_back_bg" />
+
+        <TextView
+            android:id="@+id/phoneTitle"
+            style="@style/top_title"
+            android:text="查看通讯录好友" />
+
+        <ImageView
+            android:id="@+id/title_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/player_btn_refresh" />
+    </RelativeLayout>
+    <com.droid.view.PinnedHeaderListView android:id="@+id/list_view" 
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"
+		android:scrollbars="none"
+	
+		android:divider="@null"
+		android:layout_below="@+id/phoneTitleLayout"
+		android:cacheColorHint="#00000000" />
+    <com.droid.view.MyLetterListView 
+    	android:id="@+id/MyLetterListView01" 
+		android:layout_below="@+id/phoneTitleLayout"
+		android:layout_width="30dip" 
+		android:layout_height="fill_parent"
+		android:layout_alignParentRight="true" />
+</RelativeLayout> 

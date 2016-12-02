@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/phone_card_style_bg_middle"
+    android:clickable="true" >
+
+   
+        <TextView
+            android:id="@+id/friends_list_header_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="15dp"
+            android:paddingLeft="10dp"
+            android:text="A"
+            android:textColor="#949494"
+            android:textSize="24px"
+            android:textStyle="bold"
+            android:singleLine="true" />
+
+</RelativeLayout>
